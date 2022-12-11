@@ -1,4 +1,4 @@
-FROM mysql:5.7
+FROM mysql:latest
 MAINTAINER Hide <padocon@naver.com>
 
 #ADD ./mysql-init-files /docker-entrypoint-initdb.d

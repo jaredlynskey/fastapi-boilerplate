@@ -12,3 +12,6 @@ class User(Base, TimestampMixin):
     email = Column(Unicode(255), nullable=False, unique=True)
     nickname = Column(Unicode(255), nullable=False, unique=True)
     is_admin = Column(Boolean, default=False)
+
+    def shipping_columns(self):
+       return {"nickname": self.nickname, "email": self.email  }
